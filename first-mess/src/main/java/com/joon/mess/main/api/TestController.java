@@ -9,6 +9,6 @@ public class TestController {
 
 	@RequestMapping(value="/")
 	public String welcome() {
-		return "dashboard_3.html";
+		return "index.html";
 	}
 }
