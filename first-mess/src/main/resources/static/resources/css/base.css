@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+
+div.error {
+	padding: 15px;
+	margin: 10px 0 0 0;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	color: #a94442;
+	background-color: #f2dede;
+	border-color: #ebccd1;
+}
+
+.alignR { text-align:right !important;}
+.alignL { text-align:left !important;}
+.alignC { text-align:center !important;}
+
+.impact { font-size:16px; font-weight:bold; }
+
+
+.ui-datepicker-trigger { vertical-align:middle; margin-left:3px; }
+
+.hidden { display : none; }
+.bold {font-weight:bold !important;}
+
+.fl {float: left !important;}
+.fr {float: right !important;}
+.clear {clear:both !important;}
+
+/* 이미지 리스트 */
+.imgList li { padding:10px 0; }
+.imgList .icon { float:left; }
+.imgList .item { float:left; margin-left:20px; }
+.imgList .item h2 { color:#0C60EE;	margin-bottom:5px; }
+.imgList .item p { font-size : 14px; color: #2D2D2D; }
+.imgList li::after {  content: ""; display:block; clear:both; }
+
+/* 텍스트 리스트 */
+ul.txtList  { list-style:disc; margin-left:15px; }
+ul.txtList li { margin-top:5px; }
+ul.txtList.empty_style { list-style : none; }
+
+/* Search Box 스타일 */
+.searchBox { border: solid #14468C 2px; border-radius:10px; margin: 15px; padding: 15px; }
+
+/* 테이블 스타일 */
+.table_style01 {width:100%; border: solid #E4E4E4 1px; border-top:1px solid #99bddd;border-bottom:1px solid #99bddd;font-size:11px; font-size:13px;}
+.table_style01 th {padding:10px 0 10px 20px; background:#f8f8f8;color:#1770b5;text-align:left;border-top:1px solid #e4e4e4;border-right:1px solid #e4e4e4;vertical-align:middle;}
+.table_style01 thead th { text-align:center; }
+.table_style01 tbody th { color : #525252; }
+.table_style01 th.align_center {text-indent:0;}
+.table_style01 td.align_center {padding-left:0;}
+.table_style01 td {padding:4px 10px 4px 10px;border-top:1px solid #e4e4e4;color:#666;}
+
+.table_style01.border_all th, .table_style01.border_all td { border : solid 1px #e4e4e4; }
+.table_style01.widen th, .table_style01.widen td { padding:10px; }
+
+/* 페이징 스타일 */
+.paging {text-align:center; margin:20px 0 40px}
+.paging li {display:inline-block;}
+.paging li a {width:24px; padding:4px 0 5px; border:1px solid #cccccc; display:block; margin:0 2px}
+.paging li a:hover {border:1px solid #006dbb; color:#006dbb}
+.paging li a.active {background:#006dbb; color:#FFF; border:1px solid #006dbb}
+
+/* .table-responsive table thead tr th {font-size : 13px;text-align:center;vertical-align:middle;} */
+/* .table tr th {font-size : 13px;text-align:center; vertical-align:middle;} */
+
+.row-no-padding {
+	padding: 0 !important;
+	margin: 0 !important;
+	
+}

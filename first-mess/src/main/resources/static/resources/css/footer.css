@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+
+
+
+footer {
+	color:gray;
+	border-top:solid gray 2px;
+}
+
+footer article.links ul {
+	list-style:none;
+	overflow:hidden;
+	font-size:12px;
+}
+
+footer article.links ul li {
+	float:left;
+}
+
+footer article.links ul li+li a:before {
+	margin:0 5px;
+	content: "|";
+}
+
+footer address {
+	margin-top:10px;
+	font-size:14px;
+}
+
+footer .copyright p { float: left; font-size:14px; margin-top:16px; }
+
+footer #imgMap {
+	float:right;
+}
+
+footer .copyright:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}

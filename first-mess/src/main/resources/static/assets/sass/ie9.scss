@@ -4,112 +4,146 @@
 @import 'libs/skel';
 
 /*
-	Forty by HTML5 UP
+	Future Imperfect by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Spotlights */
+/* List */
 
-	.spotlights {
-		> section {
-			&:after {
-				content: '';
-				display: block;
-				clear: both;
-			}
+	ul {
+		&.posts {
+			article {
+				&:after {
+					clear: both;
+					content: '';
+					display: block;
+				}
 
-			> .image {
-				float: left;
-			}
+				.image {
+					display: table-cell;
+					vertical-align: top;
+				}
 
-			> .content {
-				float: left;
+				header {
+					display: table-cell;
+					padding-right: 1em;
+					vertical-align: top;
+				}
 			}
 		}
 	}
 
-/* Tiles */
+/* Author */
 
-	.tiles {
-		&:after {
-			content: '';
-			display: block;
-			clear: both;
+	.author {
+		.name {
+			display: inline-block;
+			vertical-align: middle;
 		}
 
-		article {
-			@include padding(8em, 4em);
-			float: left;
-			height: auto;
-			max-height: none;
-			min-height: 0;
+		img {
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+
+/* Post */
+
+	.post {
+		&:after {
+			clear: both;
+			content: '';
+			display: block;
+		}
+
+		> header {
+			&:after {
+				clear: both;
+				content: '';
+				display: block;
+			}
+
+			.title {
+				display: table-cell;
+				vertical-align: top;
+				width: 65%;
+			}
+
+			.meta {
+				display: table-cell;
+				vertical-align: top;
+				width: 30%;
+			}
+		}
+
+		> footer {
+			&:after {
+				clear: both;
+				content: '';
+				display: block;
+			}
+
+			.actions {
+				display: inline-block;
+			}
+
+			.stats {
+				display: inline-block;
+				margin-left: 2em;
+			}
+		}
+	}
+
+/* Mini Post */
+
+	.mini-post {
+		.image {
+			display: block;
 		}
 	}
 
 /* Header */
 
 	#header {
-		.logo {
-			position: absolute;
-			top: 0;
-			left: 0;
-		}
-
-		nav {
-			position: absolute;
-			top: 0;
-			right: 0;
-		}
-	}
-
-/* Banner */
-
-	#banner {
-		@include padding(6em, 0, (1em, 0, 0, 0));
-		background-attachment: scroll;
-		height: auto;
-		max-height: none;
-		min-height: 0;
-
-		> .inner {
-			.content {
-				display: block;
-
-				> * {
-					margin-left: 0;
-					margin: 0 0 _size(element-margin) 0;
-				}
-			}
-		}
-
-		&.major {
-			height: auto;
-			max-height: none;
-			min-height: 0;
-		}
-	}
-
-/* Contact */
-
-	#contact {
 		&:after {
+			clear: both;
 			content: '';
 			display: block;
-			clear: both;
 		}
 
-		> .inner {
-			> * {
-				float: left;
-			}
+		h1 {
+			float: left;
+		}
+
+		.links {
+			float: left;
+		}
+
+		.main {
+			position: absolute;
+			right: 0;
+			top: 0;
 		}
 	}
 
-/* Menu */
+/* Wrapper */
 
-	#menu {
-		.inner {
-			margin: 0 auto;
-		}
+	#wrapper {
+	}
+
+/* Sidebar */
+
+	#sidebar {
+		display: table-cell;
+		margin-right: 0;
+		padding-right: _size(section-spacing);
+		vertical-align: top;
+	}
+
+/* Main */
+
+	#main {
+		display: table-cell;
+		vertical-align: top;
 	}

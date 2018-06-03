@@ -1,0 +1,1089 @@
+@charset "utf-8";
+
+/*-------------------------- 공통사용 ---------------------------*/
+/* padding */
+.p0 { padding: 0 !important; }
+.p1 { padding: 1 !important; }
+.p10 { padding: 10px !important; }
+.p20 { padding: 20px !important; }
+
+/* margin  */
+.m-l-n { margin-left: 0; }
+.m-l-m { margin-left: 10px; }
+.m-l-s { margin-left: 5px; }
+.m-l-n { margin-left: 0; }
+
+.m-r-l { margin-right: 20px; }
+.m-r-m { margin-right: 10px; }
+.m-r-s { margin-right: 5px; }
+.m-r-n { margin-right: 0; }
+
+.m-t-l { margin-top: 20px; }
+.m-t-m { margin-top: 10px; }
+.m-t-s { margin-top: 5px; }
+.m-t-n { margin-top: 0; }
+
+.m-b-l { margin-bottom: 20px; }
+.m-b-m { margin-bottom: 10px; }
+.m-b-s { margin-bottom: 5px; }
+.m-b-n { margin-bottom: 0 !important; }
+
+/* text-align */
+.text-center { text-align: center !important; }
+.text-left { text-align: left !important; }
+.text-right { text-align: right !important; }
+
+/* vertical:center */
+.v-center { vertical-align: middle !important; }
+
+/* no-border */
+.border-n { border: 0 !important; }
+.b-b-n { border-bottom: 0 !important; }
+.b-t-n { border-top: 0 !important; } 
+.b-r-n { border-right: 0 !important; }
+.b-l-n { border-left: 0 !important; }
+
+/* head title*/
+.title-row {
+	margin: 10px 0 20px 0;
+}
+
+/* pointer */
+.c-pointer { cursor: pointer; }
+
+/* Scroll Setting  */
+.scroll-right { overflow-y: scroll; }
+.scroll-bottom { overflow-x: scroll; }
+.scroll-no { overflow: hidden; }
+
+/* width */
+.w10 { width:10px !important;}
+.w20 { width:20px !important;}
+.w30 { width:30px !important;}
+.w40 { width:40px !important;}
+.w50 { width:50px !important;}
+.w60 { width:60px !important;}
+.w70 { width:70px !important;}
+.w75 { width:75px !important;}
+.w80 { width:80px !important;}
+.w90 { width:90px !important;}
+.w100 { width:100px !important;}
+.w110 { width:110px !important;}
+.w120 { width:120px !important;}
+.w130 { width:130px !important;}
+.w140 { width:140px !important;}
+.w150 { width:150px !important;}
+.w160 { width:160px !important;}
+.w170 { width:170px !important;}
+.w180 { width:180px !important;}
+.w190 { width:190px !important;}
+.w200 { width:200px !important;}
+.w210 { width:210px !important;}
+.w220 { width:220px !important;}
+.w230 { width:230px !important;}
+.w240 { width:240px !important;}
+.w250 { width:250px !important;}
+.w260 { width:260px !important;}
+.w270 { width:270px !important;}
+.w280 { width:280px !important;}
+.w290 { width:290px !important;}
+.w300 { width:300px !important;}
+.w310 { width:310px !important;}
+.w320 { width:320px !important;}
+.w330 { width:330px !important;}
+.w340 { width:340px !important;}
+.w350 { width:350px !important;}
+.w360 { width:360px !important;}
+.w370 { width:370px !important;}
+.w380 { width:380px !important;}
+.w390 { width:390px !important;}
+.w400 { width:400px !important;}
+
+/* panel의 GridCss의 padding/margin 없애기 */
+.panel.col-md-1, .panel.col-md-2, .panel.col-md-3, .panel.col-md-4, .panel.col-md-5, .panel.col-md-6,
+.panel.col-md-7, .panel.col-md-8, .panel.col-md-9, .panel.col-md-10, .panel.col-md-11, .panel.col-md-12 {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 20px;
+}
+
+input.readonly { background: #ddd; }
+
+input[type=text]::-ms-clear {
+  display:none;
+}
+
+.chat-text-detail {
+	margin-top: 5px;
+	padding-top: 5px;
+	border-top: 1px solid #ccc;
+	text-align: right;
+	font-size: 11px;
+}
+
+.note-popover .popover-content .note-color .dropdown-toggle, .card-header.note-toolbar .note-color .dropdown-toggle {
+	width: 35px !important;
+}
+
+.note-popover .popover-content .note-color .dropdown-menu, .card-header.note-toolbar .note-color .dropdown-menu {
+	min-width: 175px !important;
+}
+
+/*-------------------------- Size Custom ---------------------------*/
+body {
+	font-size: 12px;
+	font-family: "맑은고딕", "Malgun Gothic", "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.panel {
+	margin-bottom: 10px;
+}
+
+.form-control {
+	font-size: 12px;
+	height: 30px;
+	padding: 6px 6px;
+}
+
+pre {
+	font-size: 12px;
+}
+
+.h2, h2 {
+	margin: 0;
+	font-size: 22px;
+}
+
+.h3, h3 {
+	font-size: 18px;
+}
+
+@media (min-width: 768px) {
+	#page-wrapper {
+		margin: 0 0 0 170px;
+		padding: 0 10px;
+	}
+	
+	.sidebar {
+		width: 170px;
+		margin-top: 41px;
+	}
+}
+
+.btn-info {
+	background-color: #4F6F9F;
+	border: none;
+}
+
+.btn-info:hover, 
+.btn-info:active, .btn-info.active, 
+.btn-info:focus, .btn-info.focus, 
+.btn-info:visited,
+.btn-info.active.focus,.btn-info.active:focus,.btn-info.active:hover,.btn-info:active.focus,.btn-info:active:focus,.btn-info:active:hover {
+	background-color: #4F6F9F;
+	border: none;
+}
+
+.btn {
+    padding: 3px 6px;
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+.btn-group-xs>.btn, .btn-xs {
+    padding: 1px 5px;
+    font-size: 10px;
+    line-height: 1.2;
+    border-radius: 3px;
+}
+
+.btn-group-sm>.btn, .btn-sm {
+    padding: 3px 6px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+
+.searchBox .btn {
+	margin-top: 5px;
+}
+
+.input-group .btn {
+	padding: 7px 12px;
+}
+
+.panel-heading {
+	padding: 6px 10px;
+}
+
+.table>tbody>tr>td,.table>tbody>tr>th,.table>tfoot>tr>td,.table>tfoot>tr>th,.table>thead>tr>td,.table>thead>tr>th {
+	padding: 5px;
+}
+
+.panel-body {
+	padding: 10px;
+}
+
+.pagination>li>a, .pagination>li>span {
+	padding: 3px 7px;
+	color : rgb(0, 0, 102);
+}
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+	background-color: #4F6F9F;
+	border-color: #4F6F9F;
+}
+
+.container-fluid {
+	padding: 0 10px;
+}
+
+/*-------------------------- sweetalert ---------------------------*/
+.sweet-alert {
+	width: 350px;
+	padding: 15px;
+	margin-left: -175px;
+}
+
+.sweet-alert.sweet-alert-w600 {
+	width: 600px;
+}
+
+.sweet-alert button {
+	font-size: 12px;
+	margin: 10px 5px 0 5px;
+	padding: 5px 20px;
+}
+
+.sweet-alert p {
+	font-size: 12px;
+}
+
+.sweet-alert h2 {
+	font-size: 20px;
+	margin: 15px 0;
+	line-height: 20px;
+}
+
+.sweet-alert .sa-icon {
+	margin: 15px auto;
+}
+
+/*-------------------------- page_wrapper ---------------------------*/
+#page-wrapper {
+	padding-bottom: 10px;
+}
+
+/*-------------------------- 상단글씨 ---------------------------*/
+.navbar {
+	min-height: 40px;
+}
+
+.navbar-default .navbar-brand {
+    font-family: "맑은고딕", "Malgun Gothic","Helvetica Neue",Helvetica,Arial,sans-serif;
+    height: 40px;
+    padding: 4px 15px 6px 15px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.navbar-default .navbar-brand .icon-bar {
+	margin-right: 3px;
+}
+
+.navbar-default .navbar-brand .icon-bar img {
+    vertical-align: -8px;
+}
+
+.navbar-top-links li a {
+    padding: 11px;
+    min-height: 40px;
+}
+
+/*------------------------------ Tab -------------------------------*/
+.nav-tabs {
+	margin-bottom: 20px;
+}
+
+/*-------------------------- btn-box ---------------------------*/
+.btn-box {
+	text-align: right;
+	margin-bottom: 10px;
+}
+
+.panel-default .btn-box {
+	margin-bottom: 10px;
+}
+
+/*------------------------- form-box-----------------------------*/
+.form-box {
+	width: 100%;
+	padding: 20px 10px 20px 20px;
+	margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    overflow: hidden;
+}
+
+.panel-default .form-box {
+	padding: 0;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	border: none;
+}
+
+ul.form-box, ul.form-box li.form-group {
+	list-style: none;
+}
+
+.form-box .text-danger {
+	font-style: italic;
+	font-weight: normal;
+}
+
+.form-box .form-group {
+	float: left;
+	width: 100%;
+	padding-right: 15px;
+	height: 60px;
+}
+
+.form-box .form-group .checkbox-inline {
+	margin-right: 10px;
+	margin-left: 0 !important;
+}
+
+.form-box .form-group .checkbox-inline input[type=checkbox] {
+	transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+}
+
+@media(min-width: 810px) {
+	.form-box div.form-group { width: 50%; }
+}
+
+@media(min-width: 1200px){
+	.form-box div.form-group { width: 33.33333333%; }
+}
+
+/*-------------------------- searchbox ---------------------------*/
+.searchBox {
+	border-width: 1px;
+	border-color: #ccc;
+	padding: 10px 10px 7px 10px;
+	margin: 0 0 10px 0;
+}
+
+.searchBox ul, .searchBox li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.searchBox ul {
+	margin-bottom: 0;
+	overflow: hidden;
+}
+
+.searchBox li {
+	overflow: hidden;
+	float: left;
+	width: 245px;
+	height: 30px; 
+	margin-bottom: 3px;
+}
+
+.searchBox li .search-title {
+	float: left;
+	text-align: right;
+	line-height: 30px;
+    margin-right: 5px;
+    font-size: 12px;
+    width: 75px;
+    font-weight: bold;
+}
+
+.searchBox li .search-input {
+	width: 165px;
+	overflow: hidden;
+	float: right;
+}
+
+.searchbox-sm li {
+	width: 195px;
+}
+
+.searchbox-sm li .search-title {
+    width: 65px;
+}
+
+.searchbox-sm li .search-input {
+	width: 125px;
+}
+
+
+.searchbox-xs li {
+	width: 165px;
+}
+
+.searchbox-xs li .search-title {
+    width: 55px;
+}
+
+.searchbox-xs li .search-input {
+	width: 105px;
+}
+
+
+.searchBox li .search-input .form-control {
+	float: left;
+}
+
+.searchBox li.search-bottons, .searchBox li.search-no-title {
+	width: auto;
+	margin-left: 10px;
+}
+
+.searchBox li.search-bottons  button {
+	margin-left: 0px;
+}
+
+.searchBox .checkbox-inline input[type='checkbox'] {
+	transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+}
+
+.searchBox input {
+	font-weight: normal;
+}
+
+/*-------------------------- Dashboard Overview ---------------------------*/
+.noti-box, .noti-boc ul {
+	list-style: none;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+
+.noti-box li {
+	float: left;
+	list-style: none;
+	margin: 0 15px;
+	border-bottom: 1px solid #eee;
+}
+
+.noti-box i {
+	font-size: 30px;
+}
+
+.noti-box .main-text {
+	font-size: 20px;
+}
+ 
+/*-------------------------- 챗봇대화box ---------------------------*/
+.chat {
+	padding-bottom: 50px;
+}
+
+/* 답변(watson) */
+.chat li.left {
+    padding: 8px;
+    margin: 0;
+    border-top: 1px dotted #ccc;
+    border-bottom: 0px;
+}
+
+/* 질문(사용자) */
+.chat li.right {
+    margin: 0;
+    padding: 8px 10px;
+    background-color: #f9f9f9;
+    border-top: 2px solid #ccc;
+    border-bottom: 0px;
+}
+
+/* 첫 node 상단 border 초기화 */
+.chat li:first-child {
+	border-top: 0px !important;
+}
+
+/* chat text 강조 */
+.chat li.right.highlight {
+	background-color: #d9edf7;
+	color: #31708f ;
+	border-top-color: #b7cbd5;
+	font-weight: bold;
+}
+
+.chat li.right.highlight .text-muted {
+	color: #78a;
+}
+
+.chat li.left.highlight {
+	background-color: bisque;
+}
+
+/* watson chatting highlight */
+/* .chat li.left.highlight {
+	background-color: #fff;
+	color: #a94442;
+	border-top-color: #d0bcbc;
+}  */
+
+.chat li.left.highlight .text-muted {
+	color: #977;
+}
+
+/* chat text 강조(욕설) */
+.chat li.highlight_p {
+	background-color: #f2dede ;
+	color: #a94442 ;
+	border-top-color: #d0bcbc;
+	font-weight: bold ;
+}
+
+.chat li.highlight_p .text-muted {
+	color: #977;
+}
+
+.chat li table {
+	margin-top: 5px;
+	margin-bottom: 0px;
+	border: 1px solid #ddd !important;
+}
+
+.chat li .feedback-result {    
+	width: auto;
+    border-radius: 3px;
+    padding: 3px 19px;
+    background: #efefef;
+    text-align: right;
+    margin-top: 5px !important;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.chat li .feedback-result .icon {
+	height: 20px;
+	margin-right: 5px;
+	
+}
+
+/*-------------------------- pager ---------------------------*/
+#pager, #paging {
+  text-align: center;
+  margin: 10px 0px 0px 0px;
+}
+
+.pagination {
+	margin-top: 0;
+}
+
+/*------------------- panel padding 0 table -------------------*/
+div.p0 table {
+	width: 100%;
+	border: 0px;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+
+div.p0 table thead tr th {
+	border-bottom-width: 3px;
+	border-bottom-style: double;
+	text-align:center;
+	vertical-align:middle;
+	border-right-width: 1px;
+}
+
+div.p0 table thead tr th.top-cell {
+	border-bottom: 1px solid #ddd;
+}
+
+div.p0 table tbody tr td {
+	text-align:center;
+	vertical-align:middle;
+}
+
+/*----------------------- table custom -----------------------*/
+.table {
+	margin-bottom: 10px;
+}
+
+.table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+	border-bottom: 3px double #ddd;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.table-bordered>tbody>tr>th.thead-th {
+	border-bottom: 3px double #ddd;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.table-bordered thead tr th.top-cell {
+	border-bottom: 1px solid #ddd;
+}
+
+.table-bordered thead tr th.division-col,
+.table-bordered thead tr td.division-col,
+.table-bordered tbody tr th.division-col,
+.table-bordered tbody tr td.division-col,
+.table-bordered tfoot tr th.division-col,
+.table-bordered tfoot tr td.division-col {
+	border-right: 1px solid #666;
+}
+
+.table-bordered thead tr th.total-col,
+.table-bordered thead tr td.total-col,
+.table-bordered tbody tr th.total-col,
+.table-bordered tbody tr td.total-col,
+.table-bordered tfoot tr th.total-col,
+.table-bordered tfoot tr td.total-col {
+	border-left: 2px solid #acacac;
+}
+
+.table-bordered thead tr th.last-col,
+.table-bordered thead tr td.last-col,
+.table-bordered tbody tr th.last-col,
+.table-bordered tbody tr td.last-col,
+.table-bordered tfoot tr th.last-col,
+.table-bordered tfoot tr td.last-col {
+	border-right: 0;
+}
+
+.table-bordered tbody tr th {
+	vertical-align: middle;
+}
+
+.table-bordered tfoot tr th,
+.table-bordered tfoot tr td {
+	border-top: 2px solid #acacac;
+	border-bottom: none;;
+	height: 40px;
+	vertical-align: middle;
+}
+
+
+.table-bordered tfoot tr th {
+	text-align: center;
+	padding-right: 20px;
+}
+
+.table-bordered tfoot tr td {
+	text-align: center;
+}
+
+.table tr td input[type='checkbox'], .table tr td input[type='radio'] {
+	/* transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5); */
+}
+
+.table tr td button {
+	margin-bottom: 3px;
+}
+
+/*--------------------- table collapsed ----------------------*/
+.table-collapsed .collapse, .table-collapsed .collapsing {
+	background-color: #f9f9f9;
+}
+
+.table-collapsed .collapse td, .table-collapsed .collapsing td {
+	padding-left: 33px;
+	font-size: 0.9em;
+}
+
+.table-collapsed .collapse:hover, .table-collapsed .collapsing:hover {
+	background-color: #f5f5f5;	
+}
+
+/*-------------------- pannel ul collapse -------------------*/
+.ul-panel .collapsed {
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+
+.ul-panel, .ul-panel ul, .ul-panel li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.ul-panel .panel-heading {
+	border-bottom: 0;
+}
+
+.ul-panel .collapse li, .ul-panel .collapsing li {
+	padding: 7px 6px 6px 26px;
+	border-top: 1px solid #ddd;
+}
+
+.ul-panel .collapse li:hover, .ul-panel .collapsing li:hover {
+	background: #f9f9f9;
+	cursor: pointer;
+}
+
+/*----------------------- modal popup -----------------------*/
+#bottomButtonArea {
+	margin-top: 10px;
+	text-align: center;
+}
+
+.pop-list, .pop-list li {
+	list-tyle: none;
+	padding: 0;
+	margin: 0;
+}
+
+.pop-list {
+	margin-bottom: 20px;
+}
+
+.pop-list li {
+	border-radius: 5px;
+	background: #f9f9f9;
+	margin-bottom: 5px;
+	border: 1px solid #ddd;
+	padding: 10px;
+}
+
+.pop-list li .table {
+	background: #fff;
+	margin: 0 !important;
+	border: 0;
+}
+
+.pop-list li .table thead tr th span {
+	font-weight: normal;
+}
+
+.pop-list li.p0 {
+	line-height: 0;
+}
+
+/*--------------- jQuery datepicker custom ------------------*/
+/* datepicker box */
+.ui-datepicker {
+	padding: 0.3em 0.3em 0 0.3em;
+}
+
+.ui-widget.ui-widget-content {
+	border-color: #ccc;
+}
+
+/* 년/월 선택 box */
+.ui-datepicker .ui-datepicker-header {
+    border-color: #ddd;
+}
+
+/* 년/월 선택 */
+.ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year {
+	border-color: #ddd;
+	margin-right: 1px;
+	width: 40%;
+	font-weight: normal;
+	border-radius: 10%;
+}
+
+/* 요일표기 */
+.ui-datepicker th {
+	font-weight: normal;
+    padding: 0.7em .3em 0.3em 0.3em;
+}
+
+/* 날짜 block */
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active{
+	border-color: #ddd;
+	border-radius: 10%;
+}
+
+/* 달력 하단 버튼 */
+.ui-datepicker .ui-datepicker-buttonpane {
+	padding: 0.3em 0 0.5em 0;
+	overflow: hidden;
+	margin-top: 0.3em;
+}
+
+.ui-datepicker .ui-datepicker-buttonpane button {
+	font-weight: normal;
+	font-size: 12px;
+	margin: 0px;
+}
+
+/* 현재 선택한 날짜 */
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
+
+/* 오늘날짜 */
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+
+/* 화살표 hover시 css */
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-prev-hover, .ui-datepicker .ui-datepicker-next, .ui-datepicker .ui-datepicker-next-hover {
+	border: none;
+	background: none;
+	font-weight: none;
+	color: none;
+	top: 3px;
+	cursor: pointer;
+}
+
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-prev-hover {
+	left: 3px;
+}
+
+.ui-datepicker .ui-datepicker-next, .ui-datepicker .ui-datepicker-next-hover {
+	right: 3px;
+}
+
+/*------------------------------input file css-------------------------------------*/
+.file-style-box {
+	width: 100%;
+	position: relative;
+}
+
+.file-style-box input[type='file'] {
+	visibility: hidden;
+	position: absolute;
+	width: 69px;
+	height: 30px;
+}
+
+.file-style-box .file-name-view {
+    font-size: 0.9em;
+    display: inline-block;
+    margin-left: 4px;
+    overflow: hidden;
+    height: 30px;
+    vertical-align: -10px;
+    line-height: 30px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+/*----------------------------------- dialog -----------------------------------------*/
+/* box padding */
+.ui-dialog .ui-dialog-content {
+	padding-top: 15px;
+}
+
+#frameContent .table {
+	margin-bottom: 15px;
+}
+
+/* dialog X Button */
+.ui-dialog .ui-dialog-titlebar-close {
+	margin: -10px 7px 0 0;
+    font: normal normal normal 18px/1 FontAwesome;
+    border: 0;
+    background: none;
+ }
+
+/* dialog title */
+.ui-dialog .ui-dialog-title {
+	font-size: 18px;
+}
+
+/*----------------------------------- depth list -----------------------------------------*/
+.depth-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+.depth-list li {
+	list-style: none;
+	width: 100%;
+	padding: 0;
+	margin: 0 0 4px 0;
+	position: relative;
+}
+
+.depth-list .ui-sortable-placeholder {
+	border: 1px dotted #999 !important;
+	visibility: visible !important;
+	border-radius: 4px;
+}
+
+.depth-list li ul {
+	padding: 0;
+	margin: 4px 0 8px 0;
+}
+
+.depth-list li span {
+	display: block;
+	padding: 10px;
+	border: 1px solid #ddd;
+	background: #fff;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.depth-list li span:hover, .depth-list li[uppmenuid] span:hover {
+	background: #f5f5f5;
+}
+
+.depth-list li[uppmenuid] span {
+	margin-left: 35px;
+	background: #f8f8f8;
+}
+
+.depth-list li span.highlight, .depth-list li[uppmenuid] span.highlight {
+	color: #31708f;
+	background-color: #d9edf7;
+	border-color: #bce8f1;
+	cursor: auto;
+}
+
+.depth-list li span.selectable {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    cursor: pointer !important;
+}
+
+.depth-list li span>i {
+	margin-right: 5px;
+}
+
+.depth-list li>i {
+  position:absolute;
+  top: 15px;
+  left: 11px;
+}
+
+.depth-list li ul .ui-sortable-placeholder {
+	margin-left: 35px;
+	width: auto;
+}
+
+/*----------------------------------- iconpop -----------------------------------------*/
+ul.select-layer-list {
+	display: none;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	max-width: 413px;
+	list-style: none;
+	margin: 0;
+	padding: 10px;
+	border: 1px solid #ddd;
+	background: #FFF;
+	border-radius: 10px; 
+	overflow: hidden;
+	z-index: 9995;
+}
+
+ul.select-layer-list li {
+	float: left;
+	width: 23px;
+	top: 23px;
+	font-size: 18px;
+	cursor: pointer;
+	text-align: center;
+	border: 1px solid #fff;
+	border-radius: 3px;
+}
+
+ul.select-layer-list li:hover {
+	background: #f9f9f9;
+	border-color: #ddd;
+}
+
+/*-----------------------------------etcs-----------------------------------------*/
+.has-success .form-control { border: 1px solid #ccc; }
+.sidebar .arrow { padding-top: 4px; }
+.floatForm li, .floatForm div, .floatForm label { overflow: hidden; }
+.floatForm label { line-height: 34px; float: left; font-size: 12px; font-weight: bold; margin-right: 3px; }
+.floatForm .form-control { float: left; margin-right: 3px; }
+
+a {
+	color : rgb(0, 0, 102);
+}
+
+h2 .header-alert {
+    font-size: 12px;
+    margin-left: 10px;
+    color: #a94442;
+}
+
+.wrap-panel {
+	overflow: hidden;
+	box-shadow: none;
+	webkit-box-shadow: none;
+}
+.wrap-panel .panel {
+	margin-bottom: 0;
+}
+.wrap-panel .panel-body {
+	height: 350px;
+}
+.hidden { display: none; }
+
+.input-oneline-i-button {
+	position: relative;
+}
+
+.input-oneline-i-button>i {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 30px;
+	width: 30px;
+	font-size: 20px;
+	text-align: center;
+	line-height: 30px;
+}
+
+.input-oneline-i-button button {
+	position: absolute;
+	left: 30px;
+	top: 0;
+	height: 30px;
+}
+
+.input-oneline-i-button .form-control {
+	width: 100%;
+	min-width: 250px;
+	display: block;
+} 
+
+table.dataTable thead > tr > th {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+input.datepicker {
+	-webkit-ime-mode: disabled; 
+	-moz-ime-mode: disabled; 
+	-ms-ime-mode: disabled; 
+	ime-mode: disabled; 
+}
+
+.sidebar ul li a.active[href=""] {
+	background: none;
+}
+.sidebar ul li a.active[href=""]:hover {
+	background-color: #eeeeee;
+}
+
+.chat-panel .panel-body {
+	height: 650px;
+}

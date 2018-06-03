@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+#topContent  {
+	min-height:300px;
+}
+
+
+#midContent {
+	border-top:solid black 2px;
+	min-height:200px;
+}
+
+
+#bottomContent {
+	border-top:solid black 2px;
+	min-height:150px;
+}

@@ -1,94 +1,123 @@
 /*
-	Forty by HTML5 UP
+	Future Imperfect by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Spotlights */
+/* List */
 
-	.spotlights > section:after {
+	ul.posts article:after {
+		clear: both;
 		content: '';
 		display: block;
+	}
+
+	ul.posts article .image {
+		display: table-cell;
+		vertical-align: top;
+	}
+
+	ul.posts article header {
+		display: table-cell;
+		padding-right: 1em;
+		vertical-align: top;
+	}
+
+/* Author */
+
+	.author .name {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.author img {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+/* Post */
+
+	.post:after {
 		clear: both;
-	}
-
-	.spotlights > section > .image {
-		float: left;
-	}
-
-	.spotlights > section > .content {
-		float: left;
-	}
-
-/* Tiles */
-
-	.tiles:after {
 		content: '';
 		display: block;
-		clear: both;
 	}
 
-	.tiles article {
-		padding: 8em 4em 6em 4em ;
-		float: left;
-		height: auto;
-		max-height: none;
-		min-height: 0;
+	.post > header:after {
+		clear: both;
+		content: '';
+		display: block;
+	}
+
+	.post > header .title {
+		display: table-cell;
+		vertical-align: top;
+		width: 65%;
+	}
+
+	.post > header .meta {
+		display: table-cell;
+		vertical-align: top;
+		width: 30%;
+	}
+
+	.post > footer:after {
+		clear: both;
+		content: '';
+		display: block;
+	}
+
+	.post > footer .actions {
+		display: inline-block;
+	}
+
+	.post > footer .stats {
+		display: inline-block;
+		margin-left: 2em;
+	}
+
+/* Mini Post */
+
+	.mini-post .image {
+		display: block;
 	}
 
 /* Header */
 
-	#header .logo {
-		position: absolute;
-		top: 0;
-		left: 0;
-	}
-
-	#header nav {
-		position: absolute;
-		top: 0;
-		right: 0;
-	}
-
-/* Banner */
-
-	#banner {
-		padding: 7em 0 4em 0 ;
-		background-attachment: scroll;
-		height: auto;
-		max-height: none;
-		min-height: 0;
-	}
-
-		#banner > .inner .content {
-			display: block;
-		}
-
-			#banner > .inner .content > * {
-				margin-left: 0;
-				margin: 0 0 2em 0;
-			}
-
-		#banner.major {
-			height: auto;
-			max-height: none;
-			min-height: 0;
-		}
-
-/* Contact */
-
-	#contact:after {
+	#header:after {
+		clear: both;
 		content: '';
 		display: block;
-		clear: both;
 	}
 
-	#contact > .inner > * {
+	#header h1 {
 		float: left;
 	}
 
-/* Menu */
+	#header .links {
+		float: left;
+	}
 
-	#menu .inner {
-		margin: 0 auto;
+	#header .main {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+/* Wrapper */
+
+/* Sidebar */
+
+	#sidebar {
+		display: table-cell;
+		margin-right: 0;
+		padding-right: 3em;
+		vertical-align: top;
+	}
+
+/* Main */
+
+	#main {
+		display: table-cell;
+		vertical-align: top;
 	}

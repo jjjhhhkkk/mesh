@@ -4,47 +4,82 @@
 @import 'libs/skel';
 
 /*
-	Forty by HTML5 UP
+	Future Imperfect by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+$palette-border: #dedede;
+
 /* Button */
 
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	button,
 	.button {
-		border: solid 2px !important;
+		border: solid 1px $palette-border;
+	}
 
-		&.next {
-			padding-right: 1.75em;
+/* Form */
 
-			&:before, &:after {
-				display: none;
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	input[type="tel"],
+	select,
+	textarea {
+		border: solid 1px $palette-border;
+	}
+
+/* Post */
+
+	.post {
+		border: solid 1px $palette-border;
+
+		> header {
+			border-bottom: solid 1px $palette-border;
+		}
+	}
+
+/* Mini Post */
+
+	.mini-post {
+		border: solid 1px $palette-border;
+	}
+
+/* Header */
+
+	#header {
+		border-bottom: solid 1px $palette-border;
+
+		.links {
+			border-left: solid 1px $palette-border;
+		}
+
+		.main {
+			ul {
+				li {
+					border-left: solid 1px $palette-border;
+				}
 			}
 		}
 	}
 
-/* Tiles */
+/* Sidebar */
 
-	.tiles {
-		article {
-			width: 50%;
-			-ms-behavior: url('assets/js/ie/backgroundsize.min.htc');
-			background-size: cover;
-		}
-	}
-
-/* Banner */
-
-	#banner {
-		-ms-behavior: url('assets/js/ie/backgroundsize.min.htc');
-
-		&:after {
-			display: none;
+	#sidebar {
+		> * {
+			border-top: solid 1px $palette-border;
 		}
 	}
 
 /* Menu */
 
 	#menu {
-		background: _palette(bg);
+		border-left: solid 1px $palette-border;
+
+		> * {
+			border-top: solid 1px $palette-border;
+		}
 	}

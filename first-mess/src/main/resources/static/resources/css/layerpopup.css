@@ -1,0 +1,194 @@
+@charset "utf-8";
+
+/*----------------------------------- CustomPopup -----------------------------------------*/
+
+.layer-pop-wrapper {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;;
+	top:0;
+	left: 0;
+	z-index:9999;
+	color: #333;
+}
+
+.layer-pop-back {
+	display: none;
+	background: #000; 
+	filter: alpha(opacity=40);
+	opacity: .40;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9998;
+}
+
+.layer-pop-container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.layer-pop {
+	min-width: 500px;
+	min-height: 200px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -250px;
+	margin-left: -250px;
+	
+	background: #FFF;
+	border-radius: 5px;
+	
+	-webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+
+/* header */
+.layer-pop-header {
+	border-bottom: 1px solid #ddd;
+	padding: 15px 15px 10px 15px;
+	position: absolute;
+    background: #f8f8f8;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.layer-pop-header h3 {
+	font-size: 15px;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+.layer-pop-header .layer-pop-btn-close {
+	background: none;
+	border: none;
+	box-shadow: none;
+	position: absolute;
+	top: 4px;
+	right: 9px;
+	font-size: 21px;
+}
+
+/*body*/
+.layer-pop-body {
+	padding: 10px 15px 0 15px;
+	margin-bottom: 59px;;
+    margin-top: 46px;
+	
+	overflow: auto;
+}
+
+.layer-pop-body #bottomButtonArea {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 14px 0 15px 0;
+    border-top: 1px solid #ddd;
+}
+
+.layer-pop-bottom-btns button {
+	margin: 0 1px;
+}
+
+/* etcs */
+.layer-pop-body .pop-list, .layer-pop-body .pop-list li {
+	list-style: none !important;
+}
+
+.layer-pop-body .pop-list-form, .layer-pop-body .pop-list-view {
+	overflow: hidden;
+}
+
+.layer-pop-body .pop-list-form>li, .layer-pop-body .pop-list-view>li {
+	float: left;
+	width: 100%;
+	padding: 0;
+	border: 0;
+	position: relative;
+	background: none;
+	margin-bottom: 4px;
+}
+
+.layer-pop-body .pop-list-form>li>p {
+	width: 120px;
+	position: absolute;
+	top: 0;
+	left: 0;
+    margin-top: 6px;
+    font-weight: bold;
+}
+
+.layer-pop-body .pop-list-form>li>div {
+	margin-left: 120px;
+}
+
+.layer-pop-body .pop-list-view>li {
+	border-bottom: 1px solid #f8f8f8;
+	overflow: hidden;
+	min-height: 26px;
+	padding-bottom: 5px;
+}
+
+.layer-pop-body .pop-list-view>li>p {
+	width: 120px;
+	position: absolute;
+	top: 0;
+	left: 0;
+    margin-top: 6px;
+    font-weight: bold;
+}
+
+.layer-pop-body .pop-list-view>li>div {
+	margin-left: 120px;
+	margin-top: 6px;
+}
+
+.layer-pop-body .pop-list-form>li>div .table, .layer-pop-body .pop-list-view>li>div .table {
+	border: 1px solid #ddd;
+}
+
+.layer-pop-body .pop-list-form>li.col-md-6:nth-child(odd)>div, .layer-pop-body .pop-list-view>li.col-md-6:nth-child(odd)>div {
+	padding-right: 8px;
+}
+
+@media (min-width: 992px) {
+	.layer-pop-body .pop-list-form>li.col-md-6, .layer-pop-body .pop-list-view>li.col-md-6 {
+		width: 50%;
+	}
+}
+
+.layer-pop-body .pop-list-form .error.text-danger {
+	font-style: italic;
+	font-weight: normal;
+	margin-bottom: 0;
+	margin-top: 3px;
+	display: block;
+}
+
+.layer-pop-body .pop-list-form.pop-list-view>li {
+	border-bottom: 1px solid #eee;
+	padding-bottom: 10px;
+	margin-bottom: 0px;
+	border-radius: 0;
+	min-height: 37px;
+}
+
+.layer-pop-body .pop-list-form.pop-list-view>li:last-child {
+	border-bottom: 0;
+}
+
+.pop-list-view>li>div {
+	margin-top: 6px !important
+}
