@@ -1,7 +1,7 @@
 package com.joon.mess.main.model;
 
 
-public class User {
+public class Users {
 
 	private User2 user2;
 	
